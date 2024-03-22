@@ -1,0 +1,38 @@
+.dropdown-container {
+  position: relative;
+}
+#dropdown-trigger {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.mydropdown {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: #ddd;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  font-size: 16px;
+  transform: translateX(-25%);
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+#logout-btn {
+  cursor: pointer;
+}
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}

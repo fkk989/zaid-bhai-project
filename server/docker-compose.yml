@@ -1,0 +1,30 @@
+version: '4'
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: faisal
+      POSTGRES_PASSWORD: fkk989
+      POSTGRES_DB: postgres
+    volumes:
+      - my-db:/var/lib/postgresql/data
+
+  organizer-pro:
+    image: fkk989/theater-finder
+    depends_on:
+      - postgres
+    ports:
+      - 3001:3001
+    environment:
+      DATABASE_URL: postgresql://faisal:fkk989@postgres/postgres?schema=public
+      PORT: 3001
+      JWT_SECRET: SECRET
+      SALT_ROUNDS: 8
+
+volumes:
+  my-db:
+    driver: local

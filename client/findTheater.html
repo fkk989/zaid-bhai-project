@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/findTheater.css" />
+    <script src="./scripts/theaterFinder.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="input-conatiner">
+      <div id="theater-finder-container">
+        <input type="text" id="theater-finder" onkeyup="filterLocation()" />
+        <div id="location-container" class="hide"></div>
+      </div>
+      <button class="btn" id="submit-location-btn">Search</button>
+    </div>
+    <div class="container-theater" id="theater-container"></div>
+  </body>
+</html>

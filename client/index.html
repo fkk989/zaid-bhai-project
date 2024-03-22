@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies ticket Booking System</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/dropdown.css">
+    <!-- boxicons cdn  -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- script -->
+<script src="./scripts/index.js" defer></script>
+<script src="./scripts/dashboard.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation bar start -->
+
+    <!-- #1 upper notification bar -->
+  <div class="header">
+    <div class="upper-notifi">
+      <p>
+        <a href="#">Get Tickets</a> for just $5+tax & join us on 3/4 for a
+        never-before-seen PG movie with <b>Screen Unseen</b>
+      </p>
+    </div>
+
+    <!-- #2 main navigation bar items -->
+    <div class="nav">
+      <div id="nav-logo">
+        <img
+          src="https://www.freeiconspng.com/thumbs/hd-tickets/two-tickets-interface-icons-outline-16.png"
+          alt="logo"
+        />
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li><a href="#">see a movie</a></li>
+          <li><a href="#">find a theatre</a></li>
+          <li><a href="#">food & Drinks</a></li>
+        </ul>
+      </div>
+      <div class="nav-search">
+        <input type="search-movies" placeholder="Search Movies..." size="80" />
+        <button class="btn-all all-btn">Search</button>
+      </div>
+    </div>
+    <div class="nav-location">
+      <p>
+        <box-icon type='solid' name='map'></box-icon>
+        <a href="./findTheater.html">Find a theatre Near you</a>
+      </p>
+      <span id="login-nav">
+        <box-icon type='solid' name='user-circle'></box-icon>
+        <a href="./pages/login.html">LogIn</a>
+      </span>
+      <span class="dropdown-container" id="dashboard-nav">
+        <button id="dropdown-trigger">Dashboard</button>
+          <div id="dropdown" class="mydropdown hide">
+            <a href="./pages/addAdmin.html">add Admin</a>
+            <a href="./pages/addLocation.html">Add Location</a>
+            <a href="./pages/addTheater.html">Add Theater</a>
+            <a id="logout-btn">logout</a>
+          </div>
+      </span>
+    </div>
+  </div>  
+
+    <!--#3 Registration Pannel -->
+    <div class="registration">
+        <div class="black-bg">
+            <div class="reg-sign-in">
+                <h1>Unlimited movies, TV shows and more</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+                <p>
+                  Ready to watch? Enter your email to create or restart your membership.
+                </p>
+                <div class="register">
+                    <input type="text" placeholder="Enter Your Email">
+                    <button class="btn-in-reg all-btn">Get Registered </button>
+                </div>
+        </div>
+      </div>
+      <div class="separation"></div>
+    </div>
+    <!--***** sliders effects ***** -->
+    <div class="slider">
+    </div>
+    <div class="separation"></div>
+
+    <!--************ #4 Movies collections **************-->
+    <!-- first-movie-collection  -->
+    <div class="first-mov-coll">
+      <div class="mov-heading">Upcoming Hollywood Movies</div>
+    <div class="mov-coll">
+      <!-- first item  -->
+      <div class="coll-items">
+        <div class="coll-img">
+          <img
+            src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1703019441/amc-cdn/production/2/movies/69600/69579/PosterDynamic/161485.jpg"
+            alt="img-1"
+          />
+        </div>
+        <div class="coll-info coll-info-mess">
+          <h2>Madame Web</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="btn all-btn">Book Now</button>
+        </div>
+      </div>
+
+      <!-- second item  -->
+      <div class="coll-items">
+        <div class="coll-img">
+          <img
+            src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1696452292/amc-cdn/production/2/movies/74100/74082/PosterDynamic/159114.jpg"
+            alt="img-1"
+          />
+        </div>
+        <div class="coll-info coll-info-mess">
+          <h2>The Beekeeper</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="btn all-btn">Book Now</button>
+        </div>
+      </div>
+      <!-- third item  -->
+      <div class="coll-items">
+        <div class="coll-img">
+          <img
+            src="https://cdn.marvel.com/content/1x/venom_lob_crd_01.jpg"
+            alt="img-1"
+          />
+        </div>
+        <div class="coll-info coll-info-mess">
+          <h2>Venom 3</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="btn all-btn">Book Now</button>
+        </div>
+      </div>
+      <!-- fourth item  -->
+      <div class="coll-items">
+        <div class="coll-img">
+          <img
+            src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1697567087/amc-cdn/production/2/movies/73000/73002/PosterDynamic/159467.jpg"
+            alt="img-1"
+          />
+        </div>
+        <div class="coll-info coll-info-mess">
+          <h2>Angels</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="btn all-btn">Book Now</button>
+        </div>
+      </div>
+      <!-- fifth item  -->
+      <div class="coll-items">
+        <div class="coll-img">
+          <img
+            src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1705075443/amc-cdn/production/2/movies/75800/75753/PosterDynamic/162097.jpg"
+            alt="img-1"
+          />
+        </div>
+        <div class="coll-info coll-info-mess">
+          <h2>Les Miserable</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="btn all-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+    </div>
+   
+    <div class="separation"></div>
+    <!-- second-movie-collection  -->
+    <div class="first-mov-coll">
+      <div class="mov-heading">Marvel Movies</div>
+    <div class="mov-coll">
+      <!-- first item  -->
+      <div class="coll-items">
+        <div class="coll-img">
+          <img
+            src="https://cdn.marvel.com/content/1x/avengersendgame_lob_crd_05_2.jpg"
+            alt="img-1"
+          />
+        </div>
+        <div class="coll-info coll-info-mess">
+          <h2>Avenger Endgame</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="btn all-btn">Book Now</button>
+        </div>
+      </div>
+
+      <!-- second item  -->
+      <div class="coll-items">
+        <div class="coll-img">
+          <img
+            src="https://cdn.marvel.com/content/1x/ironman3_lob_crd_01_10.jpg"
+            alt="img-1"
+          />
+        </div>
+        <div class="coll-info coll-info-mess">
+          <h2>Iron Man 2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="btn all-btn">Book Now</button>
+        </div>
+      </div>
+      <!-- third item  -->
+      <div class="coll-items">
+        <div class="coll-img">
+          <img
+            src="https://cdn.marvel.com/content/1x/deadpool2_lob_crd_02.jpg"
+            alt="img-1"
+          />
+        </div>
+        <div class="coll-info coll-info-mess">
+          <h2>Deadpool 2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="btn all-btn">Book Now</button>
+        </div>
+      </div>
+      <!-- fourth item  -->
+      <div class="coll-items">
+        <div class="coll-img">
+          <img
+            src="https://cdn.marvel.com/content/1x/spider-man2_lob_crd_01.jpg"
+            alt="img-1"
+          />
+        </div>
+        <div class="coll-info coll-info-mess">
+          <h2>Spider Man 2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="btn all-btn">Book Now</button>
+        </div>
+      </div>
+      <!-- fifth item  -->
+      <div class="coll-items">
+        <div class="coll-img">
+          <img
+            src="https://cdn.marvel.com/content/1x/thorthedarkworld_lob_crd_02_1.jpg"
+            alt="img-1"
+          />
+        </div>
+        <div class="coll-info coll-info-mess">
+          <h2>Thor</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="btn all-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--#5 section start from her ****-->
+    <section>
+        <div class="separation"></div>
+        <div class="first-sec">
+            <div class="first-sec-img">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,w_1600/v1707150565/amc-cdn/general/demon-slayer/FLM_2628_DEMON_SLAYER-KIMETSU_NO_YAIBA-TO_THE_HASHIRA_TRAINING_GENERAL_AWARENESS_WEB_PROMO_1250x892..jpg" alt="first-sec-img">
+            </div>
+            <div class="first-sec-content">
+                <span>The Demon Slayer Franchise Continues</span>
+                <p>
+                Catch the much-anticipated next installment with DEMON SLAYER: KIMETSU NO YAIBA TO THE HASHIRA TRAINING. Recap with episode 11 before forging ahead with episode 1 of the new season, now showing.</p>
+                <button class="section-btn all-btn">Get ticket</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- *** Tv show section start from her *** -->
+    <section class="tv-show">
+      <div>
+        <span>Enjoy on your TV</span>
+        <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,<br> Blu-ray players and more.</p>
+      </div>
+      <div class="item-in-tv">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+        <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" autoplay muted></video>
+      </div>
+    </section>
+    <section class="tv-show">
+      <div class="item2">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+      </div>
+      <div>
+        <span>Book or Download your shows <br>to watch offline</span>
+        <p>Save your favourites easily and always have something to watch.</p>
+      </div>
+    </section>
+    <!--******* footer start from here ********-->
+    <footer>
+      <!-- first  -->
+      <div class="separation"></div>
+      <div class="first-foot">
+        <span>Ready to watch? Enter your email to create or restart your membership.</span>
+        <div class="first-foot-reg">
+          <input type="text" placeholder="Email Address">
+          <button class="btn-all all-btn">Get Started</button>
+        </div>
+      </div>
+      
+      <!-- second  -->
+      <div class="social-links">
+        <a href="https://in.linkedin.com/in/aman-arman-ansari-53aa15223" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/galleries_0?igsh=aXQzdDBtNmNnMmVl" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/amanarman.ansari?mibextid=2JQ9oc" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/AmanArmanAnsar1" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div class="separation"></div>
+        <div class="last-foot">
+          <ul>
+            <li><a href="#">A</a></li>
+            <li><a href="#">A</a></li>
+            <li><a href="#">Aman</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">A</a></li>
+            <li><a href="#">A</a></li>
+            <li><a href="#">Arman</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">A</a></li>
+            <li><a href="#">A</a></li>
+            <li><a href="#">Ansari</a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <span>@Movie Minder - Bringing the magic of movies to your fingertips. © 2024 All rights reserved."</span>
+        </div>
+    </footer>
+  </body>
+</html>
